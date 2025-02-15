@@ -1,0 +1,305 @@
+/*whole doc stuff*/
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: rgb(107, 80, 49);
+    
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/*background
+.Stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300%;
+    display: block;
+    background: #0a000000 url(https://i.imgur.com/PDOw7k2.png) repeat top center;
+    z-index: 0;
+}
+*/
+
+/*header*/
+
+
+/*Initial Header*/
+#Header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    border-style: groove;
+    border-width: 1px;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    position: fixed; 
+    background-color: rgba(184, 150, 130, 0.493);
+    z-index: 9999; 
+}
+
+
+/*Projects Experience and About me Buttons*/
+#h1, #h2, #h3 {
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: groove;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: white;
+    border-radius: 0rem;
+    transition: background-color 0.4s;
+    pointer-events: visible;
+}
+
+
+/*Contact Button*/
+#h4{
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: groove;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: white;
+   pointer-events: visible;
+    transition: background-color 0.4s;
+    margin: 0 auto;
+    margin-left: 60rem;
+}
+
+/*logo button*/
+#h0{
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: groove;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: white;
+    border-radius: 0;
+    transition: background-color 0.4s;
+    font-weight: 900;
+    margin-right: 1rem;
+    margin-left: 5rem;
+    pointer-events: visible;
+}
+
+
+#h0:hover, #h1:hover #h2:hover, #h3:hover, #h4:hover{
+    background-color: #afafaf;
+}
+
+
+
+
+
+
+
+
+
+/*about me section*/
+
+#title{
+    font-weight: 900;
+    font-size:2.5rem;
+    padding:70px 120px;
+    border-style: double;
+
+}
+
+
+.Section2 {
+    
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 200px ;
+    border-style: groove;
+
+    
+}
+
+#aboutme {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    
+  }
+  
+/*photo and paragraph formatting*/
+  #des {
+    flex: 0; /* Take up remaining space */
+    padding-right: 20px;
+  }
+  
+  .imgc {
+    flex-shrink: 0; 
+    text-align: center;
+  }
+  
+  #photo {
+    height: 400px;
+    width: 400px; /* Adjust image size */
+    border-radius: 100%; /* Optional: To make the image circular */
+    margin-bottom: 30px;
+  }
+  
+
+
+
+
+
+
+
+
+/*projects section*/
+.Section3 {
+    
+   
+    
+    padding: 100px;
+    border-style: groove;
+    background-color: rgb(54, 27, 1);
+    
+}
+
+#project {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+/*flex container full of projects*/
+.projects {
+    
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+  }
+
+/*buttons for projects (inside flex container)*/
+#p{
+    z-index: 10;
+    padding:auto;
+    font-size: 24px;
+    border: groove;
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.28);
+    color: white;
+    transition: background-color 0.4s;
+    height: 150px;
+    /*dupe id */
+
+    flex: 1 1 calc(30% - 10px); 
+    box-sizing: border-box; 
+    margin: px;
+    padding: 20px;
+    text-align: center;
+    width: 10px;
+
+  }
+
+
+
+
+/*project button effect*/
+#p1:hover, #p2:hover, #p3:hover {
+    background-color: rgba(160, 95, 34, 0.534);
+}
+
+
+
+
+
+/*experience section*/
+.Section4 {
+    border-style: groove;
+    
+    
+    padding: 400px ;
+    
+   
+}
+
+
+
+
+
+
+
+
+#index{
+    border-style: groove;
+    padding:200px;
+    background-color: #8a808000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(29, 20, 1);
+    min-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer section*/
+
+.footer{
+    border-style: groove;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(182, 162, 119);
+    min-height: 50px;
+    
+}
+
+#money{
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: groove;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: white;
+    border-radius: 0rem;
+    transition: background-color 0.4s;
+    pointer-events: visible;
+    margin-bottom: 20px;
+}
+#money:hover{
+    background-color: black;
+}
