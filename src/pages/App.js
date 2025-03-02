@@ -9,49 +9,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 
-function ProjectsSlides()
-  const settings = {
-      /*sets the dots to true like below the current slide*/
-      dots: true,
-      /*these are pretty self explanatory - just included in the slick library*/
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll:1,
 
 
-
-      appendDots: dots => (
-          <div>
-              <ul style = {{
-                  margin: "0px", padding : "0px"
-
-              }}> {dots} </ul>
-          </div>
-      ),
-
-
-
-responsive: [
-  {
-      breakpoint: 1024,
-      settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-      }
-  },
-  {
-      breakpoint: 600, 
-      settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-      }
-  }
-]
-  }
 
 
 
@@ -82,30 +41,11 @@ function Header() {
 
 
 // Projects Component
-function Projects() {
+function projects() {
   return (
     <div className="projects">
     
 
-                <Slider {...settings}>
-                    <div className="full-width-slide">
-                        
-            <h1>Lig</h1>
-                             
-                            
-                    </div>
-
-
-
-                    <div className="full-width-slide">
-                        <h1>ma</h1>
-
-                    </div>
-
-                    <div className="full-width-slide">
-                        <h1>f</h1>
-                    </div>
-                </Slider>
       
     
       
@@ -127,7 +67,7 @@ function Experience() {
 function SocialMedia() {
   return (
     <div id="socials">
-      <button onClick={() => window.open('https://instagram.com', '_blank')}>Instagram</button>
+      
       <button onClick={() => window.open('https://github.com', '_blank')}>GitHub</button>
       <button onClick={() => window.open('https://linkedin.com', '_blank')}>LinkedIn</button>
       <button onClick={() => window.location.href = 'mailto:you@example.com'}>Email</button>
@@ -164,7 +104,7 @@ function Home() {
       {/* Featured Projects */}
       <div className="Section3">
         <h1 id="project">Featured Projects</h1>
-        <Projects />
+        <projects />
         <p>Click <Link to="/projects">here</Link> to see all my projects</p>
       </div>
 
@@ -175,7 +115,7 @@ function Home() {
 
       {/* Index/Social Media Section */}
       <div id="index">
-        <Index />
+        <SocialMedia />
         <div id="sections">
           <div>About</div>
           <div>Projects</div>
@@ -201,7 +141,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/projects" element={<projects />} />
       </Routes>
     </>
   );
